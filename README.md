@@ -63,16 +63,18 @@ Each of them runs Docker with a few essential flags, like setting the `--env-fil
 `env.list` and mounting the `data` and `logs` subfolders - this ensures the container
 is configured correctly and you have access to the data and logs it produces.
 
-````
-# These examples assume you've tagged the image 'lunaci'.
+These examples assume you've tagged the image `lunaci` and you're inside the `_install`
+folder created earlier. You could have moved it anywhere else and named it whatever
+you like, the important thing is that the structure of this directory remains intact.
 
+````
 # Run Docker as a daemon - a process in the background - this is probably the option you want.
 # After you run this command, you can use your standard Docker commands to interact
 # with the container (docker container ls, docker logs <container>, etc.).
 ./docker_run_daemon.sh lunaci
 
 # Run Docker in the foreground.
-./docker_run.sh
+./docker_run.sh lunaci
 
 # run Docker interactively - you can 'cd' around and explore the files
 ./docker_run_interactive.sh lunaci
