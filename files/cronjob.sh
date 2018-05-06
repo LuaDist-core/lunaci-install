@@ -85,7 +85,7 @@ done
 git remote add origin https://$PUSHER_GITHUB_TOKEN@github.com/$GITHUB_ORG_NAME/manifest.git
 git add --all
 git commit -m 'Update Manifest file'
-git push origin master
+git push --force origin master
 
 # Run git2travis
 cd "$SRC_DIR/git2travis"
