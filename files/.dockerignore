@@ -1,0 +1,6 @@
+env.list
+/data
+/logs
+/docker_run_daemon.sh
+/docker_run_interactive.sh
+/docker_run.sh
