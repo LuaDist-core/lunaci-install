@@ -28,28 +28,28 @@ Before installing, make sure you have the following:
 The installation process is as follows:
 
 ````
-# clone the repository wherever you like
+# Clone the repository wherever you like.
 git clone https://github.com/LuaDist-core/lunaci-install lunaci
 cd lunaci
 
-# run the install script
-# if successful, there should be a new _install subfolder
+# Run the install script.
+# If successful, there should be a new '_install' subfolder.
 ./install.sh
 
 cd _install
 
-# you need to edit the env.list file and fill in at least:
+# You need to edit the env.list file and fill in at least:
 #  - GITHUB_ORG_NAME
 #  - GITHUB_TOKEN
 #  - TRAVIS_TOKEN
 #
-# env.list contains a brief description of what these variables do
+# The env.list file contains a brief description of what these variables do.
 #
-# to edit env.list, you can, of course, use any editor you like, nvim
-# is used simply as an example
+# To edit env.list, you can, of course, use any editor you like, nvim
+# is used simply as an example here.
 nvim env.list
 
-# you can now build a Docker image from the current directory
+# You can now build a Docker image from the current directory.
 docker build -t lunaci .
 ````
 
@@ -76,7 +76,7 @@ you like, the important thing is that the structure of this directory remains in
 # Run Docker in the foreground.
 ./docker_run.sh lunaci
 
-# run Docker interactively - you can 'cd' around and explore the files
+# Run Docker interactively - you can 'cd' around and explore the files.
 ./docker_run_interactive.sh lunaci
 ````
 
